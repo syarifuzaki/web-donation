@@ -1,0 +1,62 @@
+/* Custom css */
+.origin-0 {
+  transform-origin: 0%;
+}
+
+.floating input:focus ~ label,
+.floating input:not(:placeholder-shown) ~ label,
+.floating textarea:focus ~ label,
+.floating textarea:not(:placeholder-shown) ~ label,
+.floating select:focus ~ label,
+.floating select:not([value='']):valid ~ label {
+  /* @apply transform; scale-75; -translate-y-6; */
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 0.75;
+  --tw-scale-y: 0.75;
+  --tw-translate-y: -1.3rem;
+  --tw-translate-x: 0;
+  z-index: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.floating input:focus ~ label,
+.floating select:focus ~ label {
+  /* @apply text-black; left-0; */
+  --tw-text-opacity: 1;
+  /* color: rgba(0, 0, 0, var(--tw-text-opacity)); */
+}
+
+.floating-icon input:focus ~ label,
+.floating-icon input:not(:placeholder-shown) ~ label,
+.floating-icon textarea:focus ~ label,
+.floating-icon textarea:not(:placeholder-shown) ~ label,
+.floating-icon select:focus ~ label,
+.floating-icon select:not([value='']):valid ~ label {
+  /* @apply transform; scale-75; -translate-y-6; */
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 0.75;
+  --tw-scale-y: 0.75;
+  --tw-translate-y: -1.3rem;
+  --tw-translate-x: -2rem;
+  z-index: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+/* 
+  transform: translateX(-35px) translateY(-1.3rem) scaleX(0.75) scaleY(0.75); */
+}
+
+.floating-icon input:focus ~ label,
+.floating-icon select:focus ~ label {
+  /* @apply text-black; left-0; */
+  --tw-text-opacity: 1;
+  /* color: rgba(0, 0, 0, var(--tw-text-opacity)); */
+}
